@@ -1,0 +1,210 @@
+body {
+    font-family: 'Segoe UI', 'Microsoft YaHei', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f5f6fa;
+    color: #222;
+}
+header {
+    background: #222;
+    color: #fff;
+    text-align: center;
+    padding: 40px 20px 20px 20px;
+}
+.avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    margin-bottom: 16px;
+    object-fit: cover;
+}
+section {
+    max-width: 800px;
+    margin: 32px auto;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    padding: 32px 24px;
+}
+h2 {
+    color: #2d8cf0;
+    margin-top: 0;
+}
+.skills ul, .contact ul {
+    list-style: none;
+    padding: 0;
+}
+.skills li, .contact li {
+    padding: 6px 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+.skills li:last-child, .contact li:last-child {
+    border-bottom: none;
+}
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+.project-item {
+    flex: 1 1 300px;
+    background: #f8faff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 1px 4px rgba(45,140,240,0.05);
+}
+.project-item h3 {
+    margin-top: 0;
+}
+.project-item a {
+    color: #2d8cf0;
+    text-decoration: none;
+    font-weight: bold;
+}
+footer {
+    text-align: center;
+    color: #888;
+    padding: 24px 0 16px 0;
+    font-size: 15px;
+}
+/* 博客页面和项目详情页面样式 */
+nav {
+    margin: 16px 0;
+    text-align: center;
+}
+nav a {
+    color: #2d8cf0;
+    text-decoration: none;
+    margin: 0 12px;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+nav a:hover {
+    color: #0056b3;
+}
+.blog-list {
+    max-width: 800px;
+    margin: 32px auto;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    padding: 32px 24px;
+}
+.blog-item {
+    border-bottom: 1px solid #f0f0f0;
+    padding: 18px 0;
+}
+.blog-item:last-child {
+    border-bottom: none;
+}
+.blog-item h3 {
+    margin: 0 0 8px 0;
+}
+.blog-item a {
+    color: #2d8cf0;
+    text-decoration: none;
+}
+.blog-item a:hover {
+    text-decoration: underline;
+}
+.project-detail {
+    max-width: 800px;
+    margin: 32px auto;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    padding: 32px 24px;
+}
+.project-detail h2 {
+    margin-top: 0;
+}
+/* 夜间模式基础样式（后续JS切换） */
+body.dark {
+    background: #181c27;
+    color: #e0e6f1;
+}
+body.dark header {
+    background: #23283a;
+    color: #e0e6f1;
+}
+body.dark section, body.dark .blog-list, body.dark .project-detail {
+    background: #23283a;
+    color: #e0e6f1;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+}
+body.dark nav a {
+    color: #7abaff;
+}
+body.dark nav a:hover {
+    color: #fff;
+}
+body.dark .project-item {
+    background: #23283a;
+    box-shadow: 0 1px 4px rgba(45,140,240,0.10);
+}
+body.dark footer {
+    color: #aaa;
+}
+/* 夜间模式按钮和简历下载按钮样式 */
+#darkModeToggle {
+    margin: 12px 8px 0 0;
+    padding: 8px 18px;
+    border: none;
+    border-radius: 6px;
+    background: #2d8cf0;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+#darkModeToggle:hover {
+    background: #0056b3;
+}
+.resume-btn {
+    display: inline-block;
+    margin: 12px 0 0 0;
+    padding: 8px 18px;
+    border-radius: 6px;
+    background: #fff;
+    color: #2d8cf0;
+    border: 1px solid #2d8cf0;
+    font-size: 15px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background 0.2s, color 0.2s;
+}
+.resume-btn:hover {
+    background: #2d8cf0;
+    color: #fff;
+}
+body.dark #darkModeToggle {
+    background: #7abaff;
+    color: #23283a;
+}
+body.dark #darkModeToggle:hover {
+    background: #fff;
+    color: #23283a;
+}
+body.dark .resume-btn {
+    background: #23283a;
+    color: #7abaff;
+    border: 1px solid #7abaff;
+}
+body.dark .resume-btn:hover {
+    background: #7abaff;
+    color: #23283a;
+}
+@media (max-width: 600px) {
+    section {
+        padding: 18px 6px;
+    }
+    .project-list {
+        flex-direction: column;
+        gap: 12px;
+    }
+    .avatar {
+        width: 80px;
+        height: 80px;
+    }
+}
